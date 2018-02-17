@@ -1,0 +1,165 @@
+body {
+   margin: 0;
+   padding: 0;
+   font-family: helvetica;
+}
+
+* {
+	box-sizing: border-box;
+}
+hr {
+	border: 4px #333 solid;
+	bottom: 0%;
+	margin: 0;
+}
+
+
+.panel {
+	overflow: hidden;
+	position: relative;
+	width: 100vw;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.slider {
+	left: -100vw;
+	position: absolute;
+}
+
+.slider-item {
+	position: relative;
+	float: left;
+	height: 600px;
+	width: 100vw;
+	overflow: hidden;
+}
+
+.slider-item img {
+	/*https://stackoverflow.com/questions/14562457/center-oversized-image-in-div*/
+	margin-left: 50%;
+	transform: translateX(-50%);
+
+	vertical-align: center;
+
+	height: 100%;
+	width: auto;
+}
+
+.panel button {
+	position: absolute;
+	top: 50%;
+	background-color: transparent;
+	outline: none;
+	font-size: 70px;
+	border: none;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-shadow: 6px 0px white;
+	transform: translateY(-50%);
+}
+
+.panel .carousel-next {
+	right: 0%;
+}
+
+
+
+.caption {
+	font-size: 60px;
+	font-family: helvetica;
+	position: absolute;
+	font-weight: bold;
+	line-height: 1em;
+	opacity: 0.85;
+}
+
+.caption.left {
+	top: 15%;
+	left: 8%;
+	/*margin-left: 100px;*/
+}
+
+.caption.right {
+	top: 15%;
+	right: 8%;
+}
+
+.blue {
+	color: #011f4b;
+}
+
+.green {
+	color: #7a2222;
+}
+
+.white {
+	color: #ffffff;
+}
+
+.menu ul {
+	background-color: #333;
+	list-style: none;
+	margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu ul li {
+	font-size: 18px;
+	font-family: helvetica;
+	color: white;
+	float: left;
+	/*width: 20%;*/
+	text-align: center;
+	padding: 14px;
+}
+
+.drawer-panel {
+	overflow: hidden;
+	height: 300px;
+	position: fixed;
+	width: 100vw;
+	bottom: 0%;
+}
+
+.drawer {
+	position: absolute;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	bottom: 0;
+	height: 300px;
+	/*width: 100vw;*/
+	/*overflow: hidden;*/
+	transition: all 2s;
+	background-color: #333;
+	/*padding: 60px;*/
+	opacity: 0.8;
+}
+
+.drawer.close {
+	position: absolute;
+	bottom: -300px;
+}
+
+.drawer .close-button {
+	padding: 20px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+
+	display: block;
+	font-size: 40px;
+}
+
+.drawer h1 {
+	margin: 0;
+	font-size: 40px;
+	color: white;
+}
+
+.drawer img {
+	height: 100%;
+	width: auto;
+}
