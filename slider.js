@@ -52,4 +52,8 @@ $(function() {
     	$('.drawer').toggleClass('close');
     }, 2000);
 
+    setInterval(function (){
+    	triggers[1].click();
+    }, 5000);
+
 });
